@@ -1,0 +1,7 @@
+<div class=" mt-5 mb-5">
+  <h2>Lista de usuaios registrados</h2>
+  <p>A continuacion la lista de los usuarios registrados, recuerda que si deseas modificar la informacion de algun
+    usuario la <strong> cedula</strong> es el unicio campo que no es modificable.</p>
+
+  <app-tarjetas [List]="usuarios" (emitCedula)="eliminarUsuario($event)"></app-tarjetas>
+</div>

@@ -1,0 +1,7 @@
+{
+"/usuario/":{
+    "target":"https://prubascmc.herokuapp.com",
+    "secure":false,
+    "changeOrigin": true
+  }
+}

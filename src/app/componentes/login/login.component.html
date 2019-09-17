@@ -1,0 +1,20 @@
+<div class="parent-cms">
+    <div class="container parentflex">
+        <div class="formulario col-4">
+            <img class="imagebienvenido" src="assets/cmc.jpg" alt="herora" width="400px" height="400px">
+            <form class="px-4 py-3">
+                <div class="form-group">
+                    <label for="exampleDropdownFormEmail1">Usuario</label>
+                    <input name="user" type="user" class="form-control" id="exampleDropdownFormEmail1" placeholder="CMC" [(ngModel)]="usuario">
+                </div>
+                <div class="form-group">
+                    <label for="exampleDropdownFormPassword1">Contraseña</label>
+                    <input name="usuario" type="text" class="form-control" id="exampleDropdownFormPassword1" placeholder="*q123456 " [(ngModel)]="password">
+                </div>
+                <!-- <a class="dropdown-item" href="#">Olvidaste tu contraseña?</a> -->
+                <button (click)="login()" type="button" class="btn btn-success  col-12">Inicia Sesion</button>
+            </form>
+            <app-loading *ngIf="loading"></app-loading>
+        </div>
+    </div>
+</div>

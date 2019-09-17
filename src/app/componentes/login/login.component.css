@@ -1,0 +1,34 @@
+    .imagebienvenido {
+        width: 100%;
+        background-color: transparent;
+        width: 50%;
+        height: 40%;
+        display: flex;
+        margin: 0 auto;
+        object-fit: contain;
+    }
+
+    .parent-cms {
+        background-image: url('../../../assets/escritorio.jpg');
+        background-size: cover;
+        height: 50em;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .formulario {
+        background: white;
+        border-radius: 1em;
+        display: flex;
+        flex-direction: column;
+        padding-top: 0em;
+        width: 30em;
+        height: min-content;
+        margin-top: 20%;
+        margin-right: 6%;
+    }
+
+    .parentflex {
+        display: flex;
+        justify-content: flex-end;
+    }

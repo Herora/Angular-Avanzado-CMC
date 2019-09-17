@@ -1,0 +1,29 @@
+<div class="navColor" >
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark navPropiedades  container">
+        <a class="navbar-brand" href="/pages/usuarios">CMC</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <!--el routerLinkActive="active" SIRVE PARA QUE SE RESALTE EN BLANCO LA PAGINA ABIERTA -->
+                <li class="nav-item" routerLinkActive="active">
+                    <!--EL routerLink="search" LE INDICA A QUE ENLACE DE IR EL CLICK-->
+                    <a class="nav-link" routerLink="usuarios">Home</a>
+                </li>
+                <li class="nav-item" routerLinkActive="active">
+                    <!--EL routerLink="search" LE INDICA A QUE ENLACE DE IR EL CLICK-->
+                    <a class="nav-link" routerLink="registrar">Registrar</a>
+                </li>
+                <li class="nav-item" routerLinkActive="active">
+                    <!--EL routerLink="search" LE INDICA A QUE ENLACE DE IR EL CLICK-->
+                    <a class="nav-link" routerLink="buscar">Buscar</a>
+                </li>
+                <!--el routerLinkActive="active" SIRVE PARA QUE SE RESALTE EN BLANCO LA PAGINA ABIERTA -->
+            </ul>
+            <!--  <button (click)="login()" class="btn btn-success btn-sm nav-link btnnav" routerLink="login">Inicia Secion</button>  -->
+            <button (click)="logout()" class="btn btn-danger btn-sm">Cerrar Sesion
+          </button>
+        </div>
+    </nav>
+</div>

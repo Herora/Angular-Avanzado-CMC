@@ -1,0 +1,20 @@
+
+<input #cedula type="number" (keyup)="listUsuario(cedula.value)" placeholder="# Cedula" >
+
+<button (click)=listUsuario()>usuario</button>
+ <div [ngSwitch]="ExistData">
+   <div *ngSwitchCase="true">
+     <app-tarjetas [List]="ListCedu" (emitCedula)="eliminarUsuario($event)"></app-tarjetas>
+   </div>
+   <div *ngSwitchCase="false">
+      <div class="alert alert-danger" role="alert">
+          <h4 class="alert-heading">ERROR</h4>
+          <p>no se encontraron resultados</p>
+          <hr>
+        </div>
+   </div>
+
+ </div>
+
+
+

@@ -1,0 +1,20 @@
+/* You can add global styles to this file, and also import other style files */
+
+footer {
+    width: 100%;
+    height: max-content;
+    background-color: rgb(58, 61, 59);
+    text-align: -webkit-left;
+    padding: 3.5em;
+}
+
+.textfooter {
+    color: white;
+}
+
+.caja1 {
+    border-right: 1px solid white;
+}
+p{
+    margin: 0px;
+}

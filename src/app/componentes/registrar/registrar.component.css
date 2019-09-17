@@ -1,0 +1,23 @@
+.fRegistro {
+    background-color: rgba(239, 235, 233, 0.13);
+    border: 1px solid rgba(189, 189, 189, 1);
+    border-radius: 10px;
+    color: black;
+    padding: 20px;
+    height: 500px;
+    height: min-content;
+}
+
+.imgRegistro {
+    margin-top: 75px;
+}
+
+.textRegistro {
+    margin-bottom: 100px;
+}
+
+.dRegistro {
+    margin-bottom: 20px;
+}
+
+

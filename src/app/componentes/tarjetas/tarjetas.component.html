@@ -1,0 +1,32 @@
+<div class="margtable mt-5">
+  <div class="row texttable mb-2">
+    <div class="col-1 col-sm-1"><strong>Cedula</strong></div>
+    <div class="col-3 col-sm-3"><strong>Nombre completo</strong></div>
+    <div class="col-3 col-sm-3"><strong>Direccion</strong></div>
+    <div class="col-2 col-sm-2"><strong>Email</strong></div>
+    <div class="col-1 col-sm-1"><strong>Celular</strong></div>
+    <div class="col-2 col-sm-2"><strong>Acciones</strong></div>
+  </div>
+
+  <div class="row texttable mb-2" *ngFor="let usuario of List">
+    <div class=" col-1 col-sm-1 ">
+      <p>{{ usuario.cedula }}</p>
+    </div>
+    <div class=" col-3 col-sm-3  ">
+      <p>{{ usuario.nombre }}</p>
+    </div>
+    <div class=" col-3 col-sm-3  ">
+      <p>{{ usuario.direccion }}</p>
+    </div>
+    <div class=" col-2 col-sm-2 ">
+      <p>{{ usuario.email }}</p>
+    </div>
+    <div class=" col-1 col-sm-1 ">
+      <p>{{ usuario.celular }}</p>
+    </div>
+    <div class=" col-2 col-sm-2 ">
+      <button type="button" class="col-6 btn btn-warning fas fa-edit" title="Editar"></button>
+      <button type="button" (click)="emitirCedula(usuario.cedula)" class="col-6 btn btn-danger fas fa-trash" title="Eliminar"></button>
+    </div>
+  </div>
+</div>

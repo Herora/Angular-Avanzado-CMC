@@ -1,0 +1,37 @@
+<div class=" textRegistro  mt-5 mb-5">
+  <h2>Registra un nuevo usuario.</h2>
+  <p>Ten encuenta que tu numero de <strong>Cedula</strong> es unico y no puede ser igual al de cualquier otro usuario.</p>
+</div>
+<div class="row col-12">
+  <div class="col-6">
+    <img src="assets/imgRegistro.png" class="imgRegistro" alt="herora" width="500px" height="350px">
+  </div>
+  <div class="fRegistro col-5">
+    <form (ngSubmit)="registrar()" novalidate [formGroup]="user">
+      <div class="dRegistro">
+        <label>Cedula</label>
+        <input type="number" class="form-control" placeholder="# Cedula" formControlName="cedula">
+        <div rol="alert" class="error alert-danger" *ngIf="user.get('cedula').hasError('required') && user.get('cedula').touched" >
+          Cedula requerida
+        </div>
+      </div>
+      <div class="dRegistro">
+        <label>Celular</label>
+        <input type="number" class="form-control" placeholder="# celular" formControlName="celular">
+      </div>
+      <div class="dRegistro">
+        <label>Direccion</label>
+        <input type="text" class="form-control" placeholder="Direccion" formControlName="direccion">
+      </div>
+      <div class="dRegistro">
+        <label>Email</label>
+        <input type="text" class="form-control" placeholder="Email" formControlName="email">
+      </div>
+      <div class="dRegistro">
+        <label>Nombre</label>
+        <input type="text" class="form-control" placeholder="Nombre" formControlName="nombre">
+      </div>
+      <button type="submit" class=" btn btn-success  col-3" [disabled]="user.get('cedula').errors?.required">Registrar</button>
+    </form>
+  </div>
+</div>
